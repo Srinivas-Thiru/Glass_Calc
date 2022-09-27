@@ -127,9 +127,8 @@ body {
 }
 .container input[type="text"] {
   width: 100%;
-  height: 100px;
+  height: 8vh;
   text-align: right;
-  color: #fff;
   outline: none;
   background: transparent;
   margin: 0 3px;
@@ -156,9 +155,18 @@ body {
 }
 @media (max-width: 1024px) {
   .container {
-    width: 75%;
+    width: 60%;
+  }
+  .container input[type="text"] {
+    color: #fff;
+    font-size: 4vh;
+    height: 9vh;
   }
   .container input[type="button"] {
-    height: 10vh;
+    height: 7vh;
+  }
+  .bubbles span {
+    height: 4vh;
+    width: 4vh;
   }
 }
