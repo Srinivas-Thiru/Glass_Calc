@@ -31,36 +31,48 @@ body {
 }
 @keyframes move {
   100% {
-    transform: translateY(-100vh);
+    transform: translateY(-120vh);
   }
 }
 .bubbles span.bub_one {
+  animation-duration: 4.5s;
   transform: scale(1);
   animation-delay: 2.5s;
 }
 .bubbles span.bub_two {
+  animation-duration: 5s;
   transform: scale(2.5);
   animation-delay: 3.5s;
 }
 .bubbles span.bub_three {
+  animation-duration: 8s;
   transform: scale(3);
   animation-delay: 0.5s;
 }
 .bubbles span.bub_four {
+  animation-duration: 3s;
   transform: scale(1.5);
   animation-delay: 5.5s;
 }
 .bubbles span.bub_five {
+  animation-duration: 10s;
   transform: scale(3.5);
   animation-delay: 2s;
 }
 .bubbles span.bub_six {
+  animation-duration: 5s;
   transform: scale(2);
   animation-delay: 1s;
 }
 .bubbles span.bub_seven {
+  animation-duration: 8s;
   transform: scale(3);
   animation-delay: 4.2s;
+}
+.bubbles span.bub_eight {
+  animation-duration: 7s;
+  transform: scale(1.75);
+  animation-delay: 3s;
 }
 .bubbles span:before{
   content: "";
@@ -99,11 +111,14 @@ body {
 .bubbles span.bub_seven:before {
   animation-delay: 0.5s;
 }
+.bubbles span.bub_seven:before {
+  animation-delay: 1.5s;
+}
 .container{
   z-index: 1;
   padding: 1.5%;
   border-radius: 13px;
-  width: 360px;
+  width: 25%;
   backdrop-filter : blur(5px);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -123,7 +138,7 @@ body {
   font-size: 20px;
 }
 .container input[type="button"] {
-  height: 65px;
+  height: 8vh;
   outline: none;
   border : none;
   border-radius: 13px;
@@ -138,4 +153,12 @@ body {
 }
 .container input[type="button"]:hover  {
   background : rgba(255, 255, 255, 0.1);
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+  .container input[type="button"] {
+    height: 10vh;
+  }
 }
