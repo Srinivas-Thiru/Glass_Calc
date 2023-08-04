@@ -1,4 +1,10 @@
+const form = document.querySelector("form");
 
+form.addEventListener("submit", (event) => {
+
+   event.preventDefault();
+   document.getElementById("=").click();
+});
 for(var i = 0; i < document.querySelectorAll("input").length ; i++) {
 document.querySelectorAll("input")[i].addEventListener("click", display);
 }
